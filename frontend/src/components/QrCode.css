@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.qrcode-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.qrcode-container .qrcode-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+    height: 380px;
+}
+.qrcode-container .qrcode-form .qrcode{
+    display: flex;
+    flex-direction: column;    
+}
+.qrcode-container .qrcode-form h2{
+    text-align: center;
+    margin: 4px 0;
+}
+.qrcode-container .qrcode-form input{
+    padding: 8px;
+    margin: 4px 0;
+    width: 100%;
+
+}
+.qrcode-container .qrcode-form .qrcode-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    flex: 1;
+}
+.qrcode-container .qrcode-form .qrcode-image img{
+    height:100%;
+    width: 100%;
+    object-fit: contain; 
+}
+.qrcode-container .qrcode-form button{
+    margin: 10px;
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar .nav-item{
+    padding: 2px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: 50%;
+    text-align: center;
+    font-size: large;
+}
+ .active{
+    color: rgb(43, 131, 131);
+}
+.active::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(43, 131, 131);
+    animation: line 0.5s;
+}
+@keyframes line {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:100%
+    }
+}
