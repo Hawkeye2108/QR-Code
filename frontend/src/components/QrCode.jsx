@@ -14,7 +14,7 @@ const QrCode = () => {
         url:url
      }
      if(url.length>0){
-     const res = await fetch("https://qrcode-backend-dqni.onrender.com/scan",{
+     const res = await fetch("https://qrcode-backend-jlby.onrender.com/scan",{
         method:"POST",
         body:JSON.stringify(data),
         headers:{
@@ -37,7 +37,7 @@ const QrCode = () => {
 
         if(name.length>0 && vpa.length>0){
         // Getting UPI QR Code from backend as image/svg+xml
-        const res = await fetch("https://qrcode-backend-dqni.onrender.com/upiqr", {
+        const res = await fetch("https://qrcode-backend-jlby.onrender.com/upiqr", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
